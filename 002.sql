@@ -24,5 +24,3 @@ as'최 연장자의 나이' from employees ;
 
 -- 문제6 그냥 년으로만 가지고 뺌.
 select date_format(curdate(),'%Y')-date_format(max(birth_date),'%Y') as '최고 어린 사원의 나이' ,date_format(curdate(),'%Y')-date_format(min(birth_date),'%Y') as '최 연장자의 나이'from employees;
-
-select * from salaries; 
